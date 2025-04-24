@@ -79,7 +79,7 @@ Find out which version of llvm you installed:
 _`ls /opt/homebrew/Cellar/llvm`_
 <BR>
 <BR>
-Add the variables for the compiler. Replace the xes with your version number.
+Add the variables for the compiler. Replace the **X**es with your version number.
 <BR>
 <BR>
 _`export CC="/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/bin/clang"`_
