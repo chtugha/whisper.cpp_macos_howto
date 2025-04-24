@@ -150,13 +150,13 @@ _`cd whisper.cpp`_
 Type into terminal:
 <BR>
 <BR>
-_`cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release -DWHISPER_CCACHE=OFF`_
+_`cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release -DWHISPER_COREML=1 -DWHISPER_CCACHE=OFF`_
 <BR>
 <BR>
 Now compile it:
 <BR>
 <BR>
-_`cmake --build build --config Release`_
+_`cmake --build build -j --config Release`_
 <BR>
 <BR>
 Download the base model:
@@ -169,3 +169,39 @@ And test it
 <BR>
 <BR>
 _`./build/bin/whisper-cli -m models/ggml-base.bin -f samples/jfk.wav -l auto`_
+<BR>
+<BR>
+<BR>
+**5.) Generate faster libraries**
+<BR>
+<BR>
+Create Anaconda environment:
+<BR>
+<BR>
+_`conda create -n py312-whisper python=3.12 -y`_
+<BR>
+<BR>
+And activate it:
+<BR>
+<BR>
+_`conda activate py312-whisper`_
+<BR>
+<BR>
+Install python stuff:
+<BR>
+<BR>
+_`pip install ane_transformers`_
+_`pip install openai-whisper`_
+_`pip install coremltools`_
+<BR>
+<BR>
+And generate a model:
+<BR>
+<BR>
+_`./models/generate-coreml-model.sh base`_
+<BR>
+<BR>
+Now test it:
+<BR>
+<BR>
+_`./build/bin/whisper-cli -m models/ggml-base.en.bin -f samples/jfk.wav`_
