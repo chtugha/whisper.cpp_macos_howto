@@ -162,7 +162,7 @@ _`cmake --build build -j --config Release`_
 Download the base model:
 <BR>
 <BR>
-_`./models/download-ggml-model.sh base`_
+_`./models/download-ggml-model.sh large-v3`_
 <BR>
 <BR>
 <BR>
@@ -194,10 +194,22 @@ _`pip install coremltools`_
 And generate a model:
 <BR>
 <BR>
-_`./models/generate-coreml-model.sh base`_
+_`./models/generate-coreml-model.sh large-v3`_
 <BR>
 <BR>
 Now test it:
 <BR>
 <BR>
-_`./build/bin/whisper-cli -m models/ggml-base.bin -f samples/jfk.wav -l auto`_
+_`./build/bin/whisper-cli -m models/ggml-large-v3.bin -f samples/jfk.wav -l auto`_
+<BR>
+<BR>
+Quantize the model
+<BR>
+<BR>
+_`./build/bin/quantize models/ggml-large-v3.bin models/ggml-large-v3-q5_0.bin q5_0`_
+<BR>
+<BR>
+And test again:
+<BR>
+<BR>
+_`./build/bin/whisper-cli -m models/ggml-large-v3-q5_0.bin -f samples/jfk.wav -l auto`_
