@@ -48,26 +48,23 @@ Install the homebrew package you downloaded
 switch to terminal and type:
 <BR>
 <BR>
-_`sudo su`_
+_`echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> $HOME/.zprofile`_  (This would be different on intel macs)
 <BR>
 <BR>
-Enter the admin password, then type
-<BR>
-<BR>
-_`eval "$(/opt/homebrew/bin/brew shellenv)"`_ (This would be different on intel macs)
-<BR>
-<BR>
-Exit the su shell:
+Exit the shell:
 <BR>
 <BR>
 _`exit`_
+<BR>
+<BR>
+Close terminal
 <BR>
 <BR>
 <BR>
 **3.) Install all necessary things**
 <BR>
 <BR>
-Enter the following command into terminal:
+Open Terminal again and enter the following command:
 <BR>
 <BR>
 _`brew install git cmake wget ninja miniconda ffmpeg`_
