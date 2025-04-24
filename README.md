@@ -185,7 +185,9 @@ Install python stuff:
 <BR>
 <BR>
 _`pip install ane_transformers`_
+<BR>
 _`pip install openai-whisper`_
+<BR>
 _`pip install coremltools`_
 <BR>
 <BR>
