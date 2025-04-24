@@ -91,6 +91,11 @@ _`export LDFLAGS="-L/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/lib"`_
 _`export CPPFLAGS="-I/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/include"`_
 <BR>
 <BR>
+It should look like this for the version 20.1.3 of llvm:
+<BR>
+_export CPPFLAGS="-I/opt/homebrew/Cellar/llvm/20.1.3/include"_
+<BR>
+<BR>
 <BR>
 **4.) Activate Miniconda**
 <BR>
