@@ -9,8 +9,10 @@
 ![Xcode](https://github.com/user-attachments/assets/72314b18-4e6c-474a-9661-d6c08e1dc94b)
 <BR>
 <BR>
-Open the app to agree to the license agreement. You can close it afterwards.
+Open the app to agree to the license agreement and install the version for your computer. You don't need the code completion thing.
 <BR>
+<BR>
+Close Xcode afterwards.
 <BR>
 <BR>
 **2.) Download the latest version of the homebrew installer:**
@@ -41,7 +43,7 @@ Open Terminal
 and enter following command:
 <BR>
 <BR>
-_`brew install cmake wget ninja miniconda ffmpeg`_
+_`brew install git cmake wget ninja miniconda ffmpeg`_
 <BR>
 <BR>
 If one of the programs that are being installed is asking for something - just always hit the `Enter` key or type _`yes`_ or _`agree`_ or whatever necessary for the default option
@@ -70,3 +72,22 @@ Open Terminal again. You should see this: `( base )` as leading information of y
 ![shell](https://github.com/user-attachments/assets/7f60204b-013f-424c-8f80-c6a491075e94)
 <BR>
 <BR>
+Create a new folder for whisper:
+<BR>
+<BR>
+_`mkdir Whisper`_
+<BR>
+<BR>
+Enter the folder:
+<BR>
+<BR>
+_`cd Whisper`_
+<BR>
+<BR>
+Download the latest whisper release from github:
+<BR>
+<BR>
+_`git clone https://github.com/ggml-org/whisper.cpp.git`_
+<BR>
+<BR>
+Enter the new 
