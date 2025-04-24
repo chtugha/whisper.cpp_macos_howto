@@ -15,6 +15,22 @@ Open the app to agree to the license agreement and install the version for your 
 Close Xcode afterwards.
 <BR>
 <BR>
+Open Terminal
+<BR>
+<BR>
+![Terminal](https://github.com/user-attachments/assets/12c5ef67-59a8-4d8d-adcf-d25e0780449a)
+<BR>
+<BR>
+Install Xcode command line tools by typing following command:
+<BR>
+<BR>
+_`xcode-select --install`_
+<BR>
+<BR>
+Leave the terminal window open
+<BR>
+<BR>
+<BR>
 **2.) Download the latest version of the homebrew installer:**
 <BR>
 <BR>
@@ -29,18 +45,20 @@ Klick on the latest release to download it (Homebrew-4.4.32.pkg in this example)
 Install the homebrew package you downloaded
 <BR>
 <BR>
+switch to terminal and type:
+<BR>
+<BR>
+eval "$(/opt/homebrew/bin/brew shellenv)"
+<BR>
+<BR>
+This step would have been different on intel macs
+<BR>
 <BR>
 <BR>
 **3.) Install all necessary things**
 <BR>
 <BR>
-Open Terminal
-<BR>
-<BR>
-![Terminal](https://github.com/user-attachments/assets/12c5ef67-59a8-4d8d-adcf-d25e0780449a)
-<BR>
-<BR>
-and enter following command:
+Enter the following command into terminal:
 <BR>
 <BR>
 _`brew install git cmake wget ninja miniconda ffmpeg`_
@@ -90,4 +108,19 @@ Download the latest whisper release from github:
 _`git clone https://github.com/ggml-org/whisper.cpp.git`_
 <BR>
 <BR>
-Enter the new 
+Enter the new Directory:
+<BR>
+<BR>
+_`cd whisper.cpp`_
+<BR>
+<BR>
+<BR>
+**5.) compile whisper**
+<BR>
+<BR>
+Type into terminal:
+<BR>
+<BR>
+_`cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release`_
+<BR>
+<BR>
