@@ -48,10 +48,19 @@ Install the homebrew package you downloaded
 switch to terminal and type:
 <BR>
 <BR>
-eval "$(/opt/homebrew/bin/brew shellenv)"
+_`sudo su`_
 <BR>
 <BR>
-This step would have been different on intel macs
+Enter the admin password, then type
+<BR>
+<BR>
+_`eval "$(/opt/homebrew/bin/brew shellenv)"`_ (This would be different on intel macs)
+<BR>
+<BR>
+Exit the su shell:
+<BR>
+<BR>
+_`exit`_
 <BR>
 <BR>
 <BR>
