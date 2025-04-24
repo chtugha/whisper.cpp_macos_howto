@@ -82,9 +82,13 @@ _`ls /opt/homebrew/Cellar/libomp`_
 Add the variables for the compiler. Replace the xes with your version number.
 <BR>
 <BR>
-_`export LDFLAGS="-L/opt/homebrew/Cellar/libomp/`_**XX.X.X**_`/lib"`_
+_`export CC="/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/bin/clang"`_
 <BR>
-_`export CPPFLAGS="-I/opt/homebrew/Cellar/libomp/`_**XX.X.X**_`/include"`_
+_`export CXX="/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/bin/clang++"`_
+<BR>
+_`export LDFLAGS="-L/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/lib"`_
+<BR>
+_`export CPPFLAGS="-I/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/include"`_
 <BR>
 <BR>
 <BR>
