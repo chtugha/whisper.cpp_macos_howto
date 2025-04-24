@@ -168,4 +168,4 @@ _`models/download-ggml-model.sh base`_
 And test it
 <BR>
 <BR>
-_`build/bin/main -m models/ggml-base.bin -f samples/jfk.wav`_
+_`./build/bin/whisper-cli -m models/ggml-base.bin -f samples/jfk.wav -l auto`_
