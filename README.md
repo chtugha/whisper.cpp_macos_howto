@@ -203,7 +203,7 @@ Now test it:
 _`./build/bin/whisper-cli -m models/ggml-large-v3.bin -f samples/jfk.wav -l auto`_
 <BR>
 <BR>
-Quantize the model
+Quantize the model with the Q5 method
 <BR>
 <BR>
 _`./build/bin/quantize models/ggml-large-v3.bin models/ggml-large-v3-q5_0.bin q5_0`_
@@ -213,3 +213,9 @@ And test again:
 <BR>
 <BR>
 _`./build/bin/whisper-cli -m models/ggml-large-v3-q5_0.bin -f samples/jfk.wav -l auto`_
+<BR>
+<BR>
+To see the difference test again:
+<BR>
+<BR>
+_`./build/bin/whisper-cli -m models/ggml-large-v3.bin -f samples/jfk.wav -l auto`_
