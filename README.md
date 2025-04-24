@@ -127,6 +127,6 @@ _`cd whisper.cpp`_
 Type into terminal:
 <BR>
 <BR>
-_`cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release`_
+_`cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release -DWHISPER_CCACHE=OFF`_
 <BR>
 <BR>
