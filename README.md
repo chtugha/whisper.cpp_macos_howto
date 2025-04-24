@@ -153,3 +153,7 @@ Type into terminal:
 _`cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release -DWHISPER_CCACHE=OFF`_
 <BR>
 <BR>
+Now compile it:
+<BR>
+<BR>
+_`cmake --build build --config Release`_
