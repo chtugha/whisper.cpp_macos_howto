@@ -162,7 +162,7 @@ _`cmake --build build -j --config Release`_
 Download the base model:
 <BR>
 <BR>
-_`models/download-ggml-model.sh base`_
+_`./models/download-ggml-model.sh base`_
 <BR>
 <BR>
 <BR>
