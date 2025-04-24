@@ -82,9 +82,9 @@ _`ls /opt/homebrew/Cellar/llvm`_
 Add the variables for the compiler. Replace the **X**es with your version number.
 <BR>
 <BR>
-_`export CC="/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/bin/clang"`_
+_`export CC=/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/bin/clang`_
 <BR>
-_`export CXX="/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/bin/clang++"`_
+_`export CXX=/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/bin/clang++`_
 <BR>
 _`export LDFLAGS="-L/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/lib"`_
 <BR>
