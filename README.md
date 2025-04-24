@@ -73,10 +73,10 @@ _`brew install git cmake wget ninja miniconda ffmpeg libomp llvm`_
 If one of the programs that are being installed is asking for something - just always hit the `Enter` key or type _`yes`_ or _`agree`_ or whatever necessary for the default option
 <BR>
 <BR>
-Find out which version of libomp you installed:
+Find out which version of llvm you installed:
 <BR>
 <BR>
-_`ls /opt/homebrew/Cellar/libomp`_
+_`ls /opt/homebrew/Cellar/llvm`_
 <BR>
 <BR>
 Add the variables for the compiler. Replace the xes with your version number.
