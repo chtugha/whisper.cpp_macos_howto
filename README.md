@@ -67,7 +67,7 @@ Close terminal
 Open Terminal again and enter the following command:
 <BR>
 <BR>
-_`brew install git cmake wget ninja miniconda ffmpeg libomp llvm`_
+_`brew install git cmake wget ninja miniconda ffmpeg libomp llvm lld`_
 <BR>
 <BR>
 If one of the programs that are being installed is asking for something - just always hit the `Enter` key or type _`yes`_ or _`agree`_ or whatever necessary for the default option
@@ -157,3 +157,15 @@ Now compile it:
 <BR>
 <BR>
 _`cmake --build build --config Release`_
+<BR>
+<BR>
+Download the base model:
+<BR>
+<BR>
+_`models/download-ggml-model.sh base`_
+<BR>
+<BR>
+And test it
+<BR>
+<BR>
+_`build/bin/main -m models/ggml-base.bin -f samples/jfk.wav`_
