@@ -165,12 +165,6 @@ Download the base model:
 _`models/download-ggml-model.sh base`_
 <BR>
 <BR>
-And test it
-<BR>
-<BR>
-_`./build/bin/whisper-cli -m models/ggml-base.bin -f samples/jfk.wav -l auto`_
-<BR>
-<BR>
 <BR>
 **5.) Generate faster libraries**
 <BR>
