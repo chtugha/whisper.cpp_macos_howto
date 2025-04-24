@@ -73,6 +73,20 @@ _`brew install git cmake wget ninja miniconda ffmpeg libomp llvm`_
 If one of the programs that are being installed is asking for something - just always hit the `Enter` key or type _`yes`_ or _`agree`_ or whatever necessary for the default option
 <BR>
 <BR>
+Find out which version of libomp you installed:
+<BR>
+<BR>
+_`ls /opt/homebrew/Cellar/libomp`_
+<BR>
+<BR>
+Add the variables for the compiler. Replace the xes with your version number.
+<BR>
+<BR>
+_`export LDFLAGS="-L/opt/homebrew/Cellar/libomp/`_**XX.X.X**_`/lib`_
+<BR>
+_`export CPPFLAGS="-I/opt/homebrew/Cellar/libomp/`_**XX.X.X**_`/include`_
+<BR>
+<BR>
 <BR>
 **4.) Activate Miniconda**
 <BR>
