@@ -67,7 +67,7 @@ Close terminal
 Open Terminal again and enter the following command:
 <BR>
 <BR>
-_`brew install git cmake wget ninja miniconda ffmpeg`_
+_`brew install git cmake wget ninja miniconda ffmpeg libomp`_
 <BR>
 <BR>
 If one of the programs that are being installed is asking for something - just always hit the `Enter` key or type _`yes`_ or _`agree`_ or whatever necessary for the default option
