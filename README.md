@@ -200,4 +200,4 @@ _`./models/generate-coreml-model.sh base`_
 Now test it:
 <BR>
 <BR>
-_`./build/bin/whisper-cli -m models/ggml-base.bin -f samples/jfk.wav`_
+_`./build/bin/whisper-cli -m models/ggml-base.bin -f samples/jfk.wav -l auto`_
