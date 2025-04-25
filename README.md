@@ -155,20 +155,17 @@ Type into terminal:
 _`cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release -DWHISPER_COREML=1 -DWHISPER_CCACHE=OFF`_
 <BR>
 <BR>
-Now compile it:
+Compile:
 <BR>
 <BR>
 _`cmake --build build -j --config Release`_
 <BR>
 <BR>
-Download the base model:
-<BR>
-<BR>
-_`./models/download-ggml-model.sh large-v3`_
+Ignore possible upcoming warnings
 <BR>
 <BR>
 <BR>
-**5.) Generate faster libraries**
+**5.) Generate the libraries**
 <BR>
 <BR>
 Create Anaconda environment:
@@ -193,31 +190,35 @@ _`pip install openai-whisper`_
 _`pip install coremltools`_
 <BR>
 <BR>
-And generate a model:
+Download the unmodified large model:
+<BR>
+<BR>
+_`./models/download-ggml-model.sh large-v3`_
+<BR>
+<BR>
+Enable coreml accelleration:
 <BR>
 <BR>
 _`./models/generate-coreml-model.sh large-v3`_
 <BR>
 <BR>
-Now test it:
+Now test your local whisper instance:
 <BR>
 <BR>
 _`./build/bin/whisper-cli -m models/ggml-large-v3.bin -f samples/jfk.wav -l auto`_
 <BR>
 <BR>
-Quantize the model with the Q5 method
+Quantize the model with the Q5 method to accellerate it further
 <BR>
 <BR>
 _`./build/bin/quantize models/ggml-large-v3.bin models/ggml-large-v3-q5_0.bin q5_0`_
 <BR>
 <BR>
-And test again:
+And run the test again:
 <BR>
 <BR>
 _`./build/bin/whisper-cli -m models/ggml-large-v3-q5_0.bin -f samples/jfk.wav -l auto`_
 <BR>
 <BR>
-To see the difference test again:
 <BR>
-<BR>
-_`./build/bin/whisper-cli -m models/ggml-large-v3.bin -f samples/jfk.wav -l auto`_
+Whisper is now up and running.
