@@ -9,7 +9,7 @@
 ![Xcode](https://github.com/user-attachments/assets/72314b18-4e6c-474a-9661-d6c08e1dc94b)
 <BR>
 <BR>
-Open the app to agree to the license agreement and install the version for your computer. You don't need the code completion thing.
+Open Xcode app to agree to the license agreement. Install the MacOs version for your computer. You don't need the code completion addon.
 <BR>
 <BR>
 Close Xcode afterwards.
