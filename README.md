@@ -90,6 +90,8 @@ _`export LDFLAGS="-L/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/lib"`_
 <BR>
 _`export CPPFLAGS="-I/opt/homebrew/Cellar/llvm/`_**XX.X.X**_`/include"`_
 <BR>
+_`export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk`_
+<BR>
 <BR>
 It should look like this for the version 20.1.3 of llvm:
 <BR>
