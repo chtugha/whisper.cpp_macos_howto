@@ -70,7 +70,7 @@ Open Terminal again and enter the following command:
 _`brew install git cmake wget ninja miniconda ffmpeg libomp llvm lld`_
 <BR>
 <BR>
-If one of the programs that are being installed is asking for something - just always hit the `Enter` key or type _`yes`_ or _`agree`_ or whatever necessary for the default option
+If one of the programs that are being installed is asking for something - just always hit the `Enter` key or type `yes` or `agree` or whatever necessary for the default option
 <BR>
 <BR>
 Find out which version of llvm you installed:
